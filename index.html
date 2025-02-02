@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrouveAbidjan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TrouveAbidjan</h1>
+        <p>Retrouvez vos objets perdus à Abidjan</p>
+    </header>
+    <main>
+        <section id="publier-objet">
+            <h2>Publier un objet trouvé</h2>
+            <form id="form-objet">
+                <input type="text" id="description" placeholder="Description de l'objet" required>
+                <input type="text" id="lieu" placeholder="Lieu trouvé" required>
+                <textarea id="indices" placeholder="Indices pour le propriétaire"></textarea>
+                <button type="submit">Publier</button>
+            </form>
+        </section>
+        <section id="rechercher-objet">
+            <h2>Rechercher un objet perdu</h2>
+            <form id="form-recherche">
+                <input type="text" id="motCle" placeholder="Mot-clé ou description" required>
+                <button type="submit">Rechercher</button>
+            </form>
+            <div id="resultats"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 TrouveAbidjan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
